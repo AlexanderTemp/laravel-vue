@@ -5,7 +5,7 @@ import { Head } from '@inertiajs/vue3';
 
 <template>
   <Head title="Bienvenido" />
-  <div class="flex h-screen flex-col items-center justify-center">
+  <div class="flex h-screen flex-col items-center justify-center gap-1">
     <p>hola mundo</p>
     <Button>Escalado</Button>
   </div>
