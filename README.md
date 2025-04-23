@@ -12,4 +12,7 @@ docker run --rm \
 
 sail up
 sail composer run dev
+
+// To install a component from shadcn use
+npx shadcn-vue@latest add switch
 ```
