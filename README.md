@@ -16,3 +16,11 @@ sail composer run dev
 // To install a component from shadcn use
 npx shadcn-vue@latest add switch
 ```
+
+## If you already have sail and database in docker
+
+```
+sail up
+
+sail composer run dev // for vite frontend
+```
