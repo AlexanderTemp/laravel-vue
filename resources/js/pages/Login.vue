@@ -22,7 +22,7 @@ import { motion } from 'motion-v'
           <Card class="!bg-transparent p-0 !backdrop-blur-sm xl:h-[550px]">
             <div class="grid h-full grid-cols-1 xl:grid-cols-2">
               <div class="pt-2 pb-2 pl-2">
-                <LoginCarrousel />
+                <LoginCarrousel :slides="[]" />
               </div>
               <LoginForm />
             </div>
