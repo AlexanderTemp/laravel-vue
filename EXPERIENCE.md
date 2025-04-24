@@ -24,7 +24,6 @@ Cuando se está usando watch en una dependencia, se puede también observar en e
 watch(
   appearance,
   () => {
-    console.log(appearance.value)
     modes.value.forEach((mode) => {
       mode.check = mode.value === appearance.value
     })
