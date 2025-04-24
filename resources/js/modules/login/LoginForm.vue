@@ -41,7 +41,9 @@
     </div>
 
     <div class="mx-12 mb-8">
-      <Button class="w-full">Iniciar sesión</Button>
+      <motion.div :while-hover="{ scale: 1.05 }" :while-press="{ scale: 1 }">
+        <Button class="w-full">Iniciar sesión</Button>
+      </motion.div>
     </div>
   </div>
 </template>
@@ -51,6 +53,7 @@ import { Button } from '@/components/ui/button'
 import { FormControl, FormField, FormItem, FormLabel } from '@/components/ui/form'
 import { Input } from '@/components/ui/input'
 import { toTypedSchema } from '@vee-validate/zod'
+import { motion } from 'motion-v'
 import { useForm } from 'vee-validate'
 import * as z from 'zod'
 
