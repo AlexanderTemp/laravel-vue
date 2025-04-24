@@ -17,7 +17,7 @@ import { Head } from '@inertiajs/vue3'
     </div>
     <div class="grid flex-1 place-items-center">
       <div class="xl:w-[850px]">
-        <Card class="p-0 xl:h-[550px]">
+        <Card class="!bg-transparent p-0 !backdrop-blur-sm xl:h-[550px]">
           <div class="grid h-full grid-cols-1 xl:grid-cols-2">
             <div class="p-2">
               <LoginCarrousel />
