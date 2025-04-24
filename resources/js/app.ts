@@ -4,6 +4,7 @@ import { createInertiaApp } from '@inertiajs/vue3';
 import type { DefineComponent } from 'vue';
 import { createApp, h } from 'vue';
 import { ZiggyVue } from 'ziggy-js';
+import { initializeTheme } from './composables/useAppearence';
 import MainLayout from './layouts/MainLayout.vue';
 
 const appName = import.meta.env.VITE_APP_NAME || 'Laravel';
@@ -28,3 +29,5 @@ createInertiaApp({
     color: '#4B5563',
   },
 });
+
+initializeTheme();

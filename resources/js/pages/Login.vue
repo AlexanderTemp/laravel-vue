@@ -5,6 +5,7 @@ import { FormControl, FormField } from '@/components/ui/form';
 import FormItem from '@/components/ui/form/FormItem.vue';
 import FormLabel from '@/components/ui/form/FormLabel.vue';
 import Input from '@/components/ui/input/Input.vue';
+import ThemeToggler from '@/components/utils/ThemeToggler.vue';
 import LoginCarrousel from '@/modules/login/LoginCarrousel.vue';
 import { Head } from '@inertiajs/vue3';
 import { toTypedSchema } from '@vee-validate/zod';
@@ -29,7 +30,9 @@ const onSubmit = form.handleSubmit((values) => {
 <template>
   <Head title="Login" />
   <div class="flex min-h-[100dvh] flex-col justify-between">
-    <div></div>
+    <div class="flex items-center justify-end px-3 pt-3 xl:px-12">
+      <ThemeToggler />
+    </div>
     <div class="grid flex-1 place-items-center">
       <div class="xl:w-[850px]">
         <Card class="p-0">
